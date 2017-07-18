@@ -12,54 +12,79 @@ const config = require('../../config');
 
 // component class item list, extends component
 class JobsList extends Component {
-    // when mount
-    componentDidMount() {
-      this.props.fetchData(config.backendUserDataUrl);
+  // when mount
+  componentDidMount() {
+    this.props.fetchData(config.backendUserDataUrl);
+  }
+
+  //
+  render() {
+    // error
+    if (this.props.haveError) {
+      return <p>Sorry! Fetching jobs have error.</p>;
     }
 
-    //
-    render() {
-      // error
-      if (this.props.haveError) {
-        return <p>Sorry! Fetching jobs have error.</p>;
-      }
+    // loading
+    if (this.props.areLoading) {
+      return <p>Loading....</p>;
+    }
 
-      // loading
-      if (this.props.areLoading) {
-        return <p>Loading....</p>;
-      }
+    //console.log('-- this props --');
+    //console.log(this.props);
 
-      //console.log('-- this props --');
-      //console.log(this.props);
+    let content = '';
+    let jobsDisplay = '';
+    if (this.props.user !== '') {
+      jobsDisplay = this.props.user.jobs.map((job, index) => {
+        //console.log(job);
 
-      let content = '';
-      let jobsDisplay = '';
-      if (this.props.user !== '') {
-        jobsDisplay = this.props.user.jobs.map((job, index) => {
-          return (
-            <li key={job._id}>
-              { job.jobTitle }<br/>
-              { job.company.displayName }<br/>
-              { job.description }
-            </li>
-          );
-        });
-      } else {
+        return (
+          <div className="card" key={ job._id }>
+            <div className="card-header">
+              &nbsp;
+            </div>
+            <div className="card-block">
+              <h4 className="card-title">{ job.company.displayName }</h4>
+              <p className="card-text">{ job.jobTitle }</p>
+              <p className="card-text">{ job.description }</p>
+              <a href={ job.company.url } className="btn btn-primary">Go</a>
+            </div>
+          </div>
+        );
+      });
+    } else {
 
-      }
+    }
 
-      // It seems not easy to have variable to hold some html, then render.
-      return (
-        <div>
-          <p>
-            { this.props.user.displayName }
-          </p>
-          <ul>
-            { jobsDisplay }
-          </ul>
+    // background-color => backgroundColor
+    // everything quote
+    const myHeaderStyle = {
+      'backgroundImage': "url('http://via.placeholder.com/1000x300')",
+      width: '100%',
+      height: '300px',
+    };
+
+    // https://stackoverflow.com/questions/42252443/vertical-align-center-in-bootstrap-4
+    // position relative
+    // top half +
+    // transform, translate y - half
+    const myHeaderTextStyle = {
+      position: 'relative',
+      top: '50%',
+      transform: 'translateY(-50%)',
+      textAlign: 'center'
+    }
+
+    // It seems not easy to have variable to hold some html, then render.
+    return (
+      <div>
+        <div style={myHeaderStyle}>
+          <h1 style={myHeaderTextStyle}>{ this.props.user.displayName }</h1>
         </div>
-      );
-    }
+        { jobsDisplay }
+      </div>
+    );
+  }
 }
 
 // Basically, this is attribute.
