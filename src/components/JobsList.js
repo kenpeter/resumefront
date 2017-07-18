@@ -6,7 +6,7 @@ import React, { Component, PropTypes } from 'react';
 // connect state and action, from react redux
 import { connect } from 'react-redux';
 // one of the action
-import { getAllJobs } from '../actions/jobs';
+import { getAllJobs, getToken } from '../actions/jobs';
 
 const config = require('../../config');
 
@@ -14,7 +14,6 @@ const config = require('../../config');
 class JobsList extends Component {
     // when mount
     componentDidMount() {
-      // where this fetch data
       this.props.fetchData(config.backendUserDataUrl);
     }
 
@@ -30,15 +29,13 @@ class JobsList extends Component {
         return <p>Loading....</p>;
       }
 
-      console.log('-- this props --');
-      console.log(this.props);
+      //console.log('-- this props --');
+      //console.log(this.props);
 
       let content = '';
       let jobsDisplay = '';
       if (this.props.user !== '') {
         jobsDisplay = this.props.user.jobs.map((job, index) => {
-          //console.log('-- job --');
-          //console.log(job.jobTitle);
           return (
             <li key={job._id}>
               { job.jobTitle }<br/>
@@ -92,7 +89,9 @@ const mapStateToProps = (state) => {
 // so we can fire any time.
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchData: (url) => dispatch(getAllJobs(url))
+    fetchData: (url) => {
+      dispatch(getAllJobs(url));
+    }
   };
 };
 
