@@ -6,7 +6,7 @@
   "scripts": {
     "build": "nwb build-react-app",
     "clean": "nwb clean-app",
-    "start": "nwb serve-react-app"
+    "start": "nwb serve-react-app --port 8016"
   },
   "dependencies": {
     "axios": "^0.16.2",
