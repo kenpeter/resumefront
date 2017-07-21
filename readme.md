@@ -1,13 +1,19 @@
 # Intro
 
-How to build a simple React and Redux website with Express backend, from start to end.
+A brief guide on how to build a simple React and Redux website with Express backend, from start to end.
 
 Demo: https://resumefront.shopshop.space/
 
 ## Buy a domain name
-Yes, you need a domain name. I know you can run from you machine. Some domain name is cheap, like $1 that cheap. A video demo: https://www.youtube.com/watch?v=Zbcn4skYXqM
+Yes, you need a domain name. I know you can run from you machine. Some domain name is cheap, like $1 that cheap. Go to namecheap.com and buy one. Paypal is supported. Here is a video demo: https://www.youtube.com/watch?v=Zbcn4skYXqM
 
-
+## Buy a server
+Head to vpsdime.com, and buy a Ubuntu server.
+* Ubuntu 16.04, 64 bit
+* 4 CPUs
+* 12G Memory
+* 60G SSD (You can use 30G in $7/month, when you keep installing stuff. It gets full easily.)
+* $14/month
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
