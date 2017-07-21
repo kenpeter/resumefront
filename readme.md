@@ -17,7 +17,9 @@ Head to vpsdime.com, and buy a Ubuntu server.
 
 Paypal is supported. Once you got your server, write down your ip address. Because you need to login into namecheap.com and point your new domain (by creating a A record) to that ip.
 
-
+## Build the server
+* Login into the server with ssh
+* Install Nginx, NVM, MongoDB, Letsencrypt, etc.....
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
