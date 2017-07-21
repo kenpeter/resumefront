@@ -1,5 +1,9 @@
 # Intro
 
+How to build a simple React and Redux website with Express backend, from start to end.
+
+## Buy a domain name
+
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
