@@ -28,6 +28,7 @@ Paypal is supported. Once you got your server, write down your ip address. Becau
 * ```yarn start``` will launch the app in http://localhost:8016
 * ```yarn build``` will compile the source into dist/ dir. See more in ```pakcage.json```
 * How to [install yarn](https://yarnpkg.com/lang/en/docs/install/), in case you don't know.
+* The front end uses Json Web Token to communicate with backend. The token is appended on url.
 
 ### About redux
 ![alt img](https://raw.githubusercontent.com/kenpeter/resumefront/master/misc/redux.png)
@@ -39,6 +40,9 @@ will popup/change.
 * "State" on the diagram contains smaller states, e.g. like TV, light, air-condition, door, windows. They can be open or close. "State" represents the entire attributes of your App.
 * Redux has a root reducer. This root reducer contains many smaller reducers. Reducer A can control TV on/off, Reducer B can control door open or close, etc....
 * Because TV is on, door is close, etc... That means your entire view is changed now.
+
+## About the back end
+
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
