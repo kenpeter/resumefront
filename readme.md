@@ -2,6 +2,8 @@
 
 How to build a simple React and Redux website with Express backend, from start to end.
 
+Demo: https://resumefront.shopshop.space/
+
 ## Buy a domain name
 
 
