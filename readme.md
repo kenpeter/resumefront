@@ -5,6 +5,8 @@ How to build a simple React and Redux website with Express backend, from start t
 Demo: https://resumefront.shopshop.space/
 
 ## Buy a domain name
+Yes, you need a domain name. I know you can run from you machine. Domain name is cheap, like $1 that cheap.
+
 
 
 # Ref
