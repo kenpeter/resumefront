@@ -24,8 +24,10 @@ Paypal is supported. Once you got your server, write down your ip address. Becau
 
 ## About the front end
 * Git clone https://github.com/kenpeter/resumefront
-* It use ```nwb``` https://github.com/insin/nwb. It is zero configuration for React and others. I am very lazy, so this is the best tool ever.
-
+* It uses ```nwb``` https://github.com/insin/nwb. It is zero configuration for React and others. I am very lazy, so this is the best tool ever.
+* ```yarn start``` will launch the app in http://localhost:8016
+* ```yarn build``` will compile the source into dist/ dir. See more in ```pakcage.json```
+* How to [install yarn](https://yarnpkg.com/lang/en/docs/install/), in case you don't know.
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
