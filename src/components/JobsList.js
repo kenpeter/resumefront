@@ -8,6 +8,8 @@ import { connect } from 'react-redux';
 // one of the action
 import { getAllJobs, getToken } from '../actions/jobs';
 
+import { Profile } from './Profile';
+import { Footer } from './Footer';
 const config = require('../../config');
 
 // component class item list, extends component
@@ -56,32 +58,28 @@ class JobsList extends Component {
 
     }
 
-    // background-color => backgroundColor
-    // everything quote
-    const myHeaderStyle = {
-      'backgroundImage': "url('http://stream.shopshop.space/img/header.jpg')",
-      width: '100%',
-      height: '300px',
+    //
+    const wrapperStyle = {
+      background: 'url("http://stream.shopshop.space/img/header.jpg") no-repeat center',
+      backgroundSize: 'cover'
     };
 
-    // https://stackoverflow.com/questions/42252443/vertical-align-center-in-bootstrap-4
-    // position relative
-    // top half +
-    // transform, translate y - half
-    const myHeaderTextStyle = {
-      position: 'relative',
-      top: '50%',
-      transform: 'translateY(-50%)',
-      textAlign: 'center'
-    }
+    const wrapperImgStyle = {
+      visibility: 'hidden'
+    };
 
     // It seems not easy to have variable to hold some html, then render.
     return (
       <div>
-        <div style={myHeaderStyle}>
-          <h1 style={myHeaderTextStyle}>{ this.props.user.displayName }</h1>
+        <div style={ wrapperStyle }>
+          <img style={ wrapperImgStyle } src="http://stream.shopshop.space/img/header.jpg" />
         </div>
+
+        <Profile />
+
         { jobsDisplay }
+
+        <Footer />
       </div>
     );
   }
