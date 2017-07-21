@@ -12,8 +12,12 @@ Head to vpsdime.com, and buy a Ubuntu server.
 * Ubuntu 16.04, 64 bit
 * 4 CPUs
 * 12G Memory
-* 60G SSD (You can use 30G in $7/month, when you keep installing stuff. It gets full easily.)
+* 60G SSD (You can use 30G in $7/month, but when you keep installing stuff. It gets full easily.)
 * $14/month
+
+Paypal is supported. Once you got your server, write down your ip address. Because you need to login into namecheap.com and point your new domain (by creating a A record) to that ip.
+
+
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
