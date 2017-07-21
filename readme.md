@@ -29,6 +29,9 @@ Paypal is supported. Once you got your server, write down your ip address. Becau
 * ```yarn build``` will compile the source into dist/ dir. See more in ```pakcage.json```
 * How to [install yarn](https://yarnpkg.com/lang/en/docs/install/), in case you don't know.
 
+### About redux
+[Redux flow](https://raw.githubusercontent.com/kenpeter/resumefront/master/misc/redux.png)
+
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
 * https://github.com/stowball/dummys-guide-to-redux-and-thunk-react
