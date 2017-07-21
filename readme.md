@@ -20,6 +20,7 @@ Paypal is supported. Once you got your server, write down your ip address. Becau
 ## Build the server
 * Login into the server with ssh
 * Install Nginx, NVM, MongoDB, Letsencrypt, etc.....
+* Basically, the flow is Nginx -> fontend (React/Redux) -> 
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
