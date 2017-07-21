@@ -59,7 +59,7 @@ class JobsList extends Component {
     // background-color => backgroundColor
     // everything quote
     const myHeaderStyle = {
-      'backgroundImage': "url('http://via.placeholder.com/1000x300')",
+      'backgroundImage': "url('http://stream.shopshop.space/img/header.jpg')",
       width: '100%',
       height: '300px',
     };
