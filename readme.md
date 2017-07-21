@@ -24,7 +24,7 @@ Paypal is supported. Once you got your server, write down your ip address. Becau
 
 ## About the front end
 * Git clone https://github.com/kenpeter/resumefront
-* It use ```nwb```
+* It use ```nwb``` https://github.com/insin/nwb. It is zero configuration for React and others. I am very lazy, so this is the best tool ever.
 
 
 # Ref
