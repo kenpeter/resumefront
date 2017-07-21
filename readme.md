@@ -20,7 +20,11 @@ Paypal is supported. Once you got your server, write down your ip address. Becau
 ## Build the server
 * Login into the server with ssh
 * Install Nginx, NVM, MongoDB, Letsencrypt, etc.....
-* Basically, the flow is Nginx -> fontend (React/Redux) -> 
+* Basically, the flow is Nginx -> fontend (React/Redux) -> backend (Express server) -> Json web token -> MongoDB. There are lots of things to install, if necessary I will put more instructions here.
+
+## About the front end
+* Git clone https://github.com/kenpeter/resumefront
+
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
