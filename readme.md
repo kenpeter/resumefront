@@ -42,7 +42,13 @@ will popup/change.
 * Because TV is on, door is close, etc... That means your entire view is changed now.
 
 ## About the back end
-
+* Git clone https://github.com/kenpeter/resumeback
+* ```yarn start``` will launch the backend and listening to port 8014.
+* It uses Express, Json web token and Moogose to connect to MongoDB.
+* There are 3 routes here.
+ * /setup
+ * /
+ * /api
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
