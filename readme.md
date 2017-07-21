@@ -32,6 +32,14 @@ Paypal is supported. Once you got your server, write down your ip address. Becau
 ### About redux
 ![alt img](https://raw.githubusercontent.com/kenpeter/resumefront/master/misc/redux.png)
 
+* So the Page, Menu, Home are you React components.
+* Image you still user jQuery, then on those Page, Menu, etc you click on a button, then something
+will popup/change.
+* So the "Action" on the diagram is like "Click", while the "Reducer" on the diagram is like "Listener".
+* "State" on the diagram is like TV, light, air-condition, door, windows. They can be open or close. "State"
+representing the entire attributes of your App.
+* Redux has a root reducer. This root reducer contains many smaller reducers. Reducer A can control TV on/off, Reducer B can control door open or close, etc....
+
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
 * https://github.com/stowball/dummys-guide-to-redux-and-thunk-react
