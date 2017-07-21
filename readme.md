@@ -1,5 +1,8 @@
 # Intro
 
+
+# Intro
+
 A brief guide on how to build a simple React and Redux website with Express backend, from start to end.
 
 Demo: https://resumefront.shopshop.space/
@@ -61,3 +64,6 @@ will popup/change.
 * https://medium.com/@kkomaz/react-to-async-await-553c43f243e2
 
 * https://stackoverflow.com/questions/30203044/using-an-authorization-header-with-fetch-in-react-native
+* https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens
+* https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8
+* https://enable-cors.org/server_expressjs.html
