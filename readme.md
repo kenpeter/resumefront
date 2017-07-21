@@ -50,6 +50,10 @@ will popup/change.
   * /, home route, nothing here.
   * /api/defaultUser, this will join 3 collections and pull out an entire json object for you.
 
+## A diagram for the entire simple site
+
+![alt img](https://raw.githubusercontent.com/kenpeter/resumefront/master/misc/resume_front_back.png)
+
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
 * https://github.com/stowball/dummys-guide-to-redux-and-thunk-react
