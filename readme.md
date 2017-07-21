@@ -46,7 +46,7 @@ will popup/change.
 * ```yarn start``` will launch the backend and listening to port 8014.
 * It uses Express, Json web token and Moogose to connect to MongoDB.
 * There are 3 routes here.
-  * /setup, this will import some data to your mongodb. This means you need to configure your MongoDB instance and change the connection detail in config.js
+  * /setup, this url needs to be hit first. After hit, it imports some data to your mongodb. This means you need to configure your MongoDB instance and change the connection detail in config.js
   * /, home route, nothing here.
   * /api/defaultUser, this will join 3 collections and pull out an entire json object for you.
 
