@@ -38,6 +38,7 @@ will popup/change.
 * So the "Action" on the diagram is like "Click", while the "Reducer" on the diagram is like "Listener".
 * "State" on the diagram contains smaller states, e.g. like TV, light, air-condition, door, windows. They can be open or close. "State" represents the entire attributes of your App.
 * Redux has a root reducer. This root reducer contains many smaller reducers. Reducer A can control TV on/off, Reducer B can control door open or close, etc....
+* Because TV is on, door is close, etc... That means your entire view is changed now.
 
 # Ref
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
