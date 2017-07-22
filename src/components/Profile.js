@@ -14,6 +14,7 @@ export class Profile extends Component {
           <h4 className="card-title">Gary Liang</h4>
           <p className="card-text">Full stack developer</p>
           <ul>
+            <li>Hire me at <a href="https://www.linkedin.com/in/thegaryliang">https://www.linkedin.com/in/thegaryliang</a></li>
             <li>PHP, MySQL, Postgresql, Oracle, Apache, Nginx.</li>
             <li>Nodejs, Webpack, Requirejs, a bit of React, Redux, Vuejs, Vuex, Mongo, Express</li>
             <li>Laravel, CodeIgniter, Drupal 7/8, Magento</li>
@@ -26,9 +27,9 @@ export class Profile extends Component {
           <div className="card-text">
             Extra:
             <ul>
-              <li>Side projects: https://goo.gl/4Ancwa</li>
-              <li>Github: https://github.com/kenpeter</li>
-              <li>Linkedin: https://www.linkedin.com/in/thegaryliang</li>
+              <li>Side projects: <a href="https://goo.gl/4Ancwa">https://goo.gl/4Ancwa</a></li>
+              <li>Github: <a href="https://github.com/kenpeter">https://github.com/kenpeter</a></li>
+              <li>Linkedin: <a href="https://www.linkedin.com/in/thegaryliang">https://www.linkedin.com/in/thegaryliang</a></li>
             </ul>
           </div>
 
@@ -57,10 +58,10 @@ export class Profile extends Component {
                 More detail checkout the source code below.
               </li>
               <li>
-                Backend souce code here: https://github.com/kenpeter/resumeback
+                Backend souce code here: <a href="https://github.com/kenpeter/resumeback">https://github.com/kenpeter/resumeback</a>
               </li>
               <li>
-                Frontend source code here: https://github.com/kenpeter/resumefront
+                Frontend source code here: <a href="https://github.com/kenpeter/resumefront">https://github.com/kenpeter/resumefront</a>
               </li>
             </ul>
           </div>
