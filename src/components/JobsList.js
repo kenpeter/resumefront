@@ -72,7 +72,7 @@ class JobsList extends Component {
     return (
       <div>
         <div style={ wrapperStyle }>
-          <img style={ wrapperImgStyle } src="http://stream.shopshop.space/img/header.jpg" />
+          <img style={ wrapperImgStyle } src="https://stream.shopshop.space/img/header.jpg" />
         </div>
 
         <Profile />
