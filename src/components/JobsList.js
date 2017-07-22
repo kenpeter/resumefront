@@ -10,6 +10,7 @@ import { getAllJobs, getToken } from '../actions/jobs';
 
 import { Profile } from './Profile';
 import { Footer } from './Footer';
+import { GoogleTagManager } from './GoogleTagManager';
 const config = require('../../config');
 
 // component class item list, extends component
@@ -71,6 +72,8 @@ class JobsList extends Component {
     // It seems not easy to have variable to hold some html, then render.
     return (
       <div>
+        <GoogleTagManager gtmId='GTM-K4SBGHB' />
+
         <div style={ wrapperStyle }>
           <img style={ wrapperImgStyle } src="http://stream.shopshop.space/img/header.jpg" />
         </div>
