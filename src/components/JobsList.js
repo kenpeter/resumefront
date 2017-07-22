@@ -60,7 +60,7 @@ class JobsList extends Component {
 
     //
     const wrapperStyle = {
-      background: 'url("http://stream.shopshop.space/img/header.jpg") no-repeat center',
+      background: 'url("//stream.shopshop.space/img/header.jpg") no-repeat center',
       backgroundSize: 'cover'
     };
 
